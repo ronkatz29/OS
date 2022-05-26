@@ -1,0 +1,31 @@
+mamanelad, ronkatz2
+Student Elad mamaman (314877853), Ron Katz (207049164)
+EX: 1
+
+FILES:
+osm.cpp -- The OSM library
+
+
+REMARKS:
+
+
+ANSWERS:
+
+Assignment 1
+Running "WhatIDo arg1" does the following:
+1. Opens the directory "Welcome".
+2. Opens the directory "To" in the directory "Welcome".
+3.opens a new file at 'Welcome/To/os2021',
+2. use the "fstat" function to handle the file.
+3. Calling the function Write with the arguments:
+	a.Pointer to the file that we want to write in.
+	b.The text we want to write :
+	"mamanelad
+	If you haven't read the course guidelines yet --- do it right now!
+	arg1"
+	c. The number of bytes to write on.
+4. Closing the file.
+5. Deletes the file.
+6. Deletes the directories.
+7. Exists all the threads in the process.
+
