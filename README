@@ -1,14 +1,71 @@
-## Projects
+mamanelad, ronkatz29
+Student Elad maman (314877853), Ron Katz (207049164)
+EX: 5
 
-Project that been made during my Bachelor degree in computer science
+FILES:
+README
+container.cpp
+sockets.cpp
+Makefile
 
-Ex1 - The costs of Trap and Virtualisation
+REMARKS:
 
-Ex2 - User-Level Threads library
+ANSWERS:
 
-Ex3 - MapReduce Multi-threaded Programming library 
+===================================Q1===================================
+The PID namespace provides processes with an independentset of
+process IDs (PIDs) from other namespaces.The first process created
+in a PID namespace is assigned the process id number 1 and receives
+most of the same special treatment as the normal init process gets.
+If you want to run identical copy of a piece of software its not always
+possible to do at the same time. if you isolate the PID so that it is
+not aware of what is going on outside of it own processes, you could run
+the both together.
 
-Ex4 - Virtual Memory library using Hierarchical Page Tables
+===================================Q2===================================
+Creating a separate mount namespace allows each of these isolated
+processes to have a completely different view of the entire systems
+mountpoint structure from the original one. This allows you to have
+a different root for each isolated process, as well as other mountpoints
+that are specific to those processes.
+
+===================================Q3===================================
+You can use cgoups to limit what a container can do. One example is 
+you can use cgroups to limit the maximal number of processes of the
+countainer. Another use it you can limit containers maximal usage
+of memory or maximal usage of CPU.
+
+===================================Q4===================================
+We use clone command to create a new child process.
+The diffrence between fork to clone is that when we use clone 
+we provide more precise control over the data shared between the
+parent and child processes. 
+clone offers more control on data shared between the process we creat.
+
+===================================Q5===================================
+The chroot command changes the root directory of the currently running 
+processes as well as its child processes.
+
+===================================Q6===================================
+The procfs is virtual file system that presents information about the processes that are currently running.
+The procfs creates when the system boots and disappear when it shuts down.
+One usage of it is for communication between kernel space and user space.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
